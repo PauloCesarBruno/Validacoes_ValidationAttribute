@@ -2,7 +2,7 @@
 
 namespace ValidacoesAPI.Validations
 {
-    public class CvvValidationAttributeCartao : ValidationAttribute
+    public class CustomValidationCVVCartao : ValidationAttribute
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {               

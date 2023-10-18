@@ -59,7 +59,7 @@ namespace ValidacoesAPI.Controllers
             catch (Exception)
             {
                 // Log the error or return it in the response
-                return BadRequest("CVV Inválido !");
+                return BadRequest("Tentativa de registro Inválida !");
             }
 
             return Ok(cliente);
@@ -70,7 +70,7 @@ namespace ValidacoesAPI.Controllers
         {
             if (id != cliente.Id)
             {
-                return BadRequest();
+                return BadRequest("Tentativa de registro Inválida !");
             }
 
             _context.Entry(cliente).State = EntityState.Modified;

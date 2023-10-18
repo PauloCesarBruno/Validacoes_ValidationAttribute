@@ -17,7 +17,8 @@ namespace ValidacoesAPI.Models
         public string CPF { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório !")]
-        [EmailAddress(ErrorMessage = "Deve ser um e-mail válido !")]
+        //[EmailAddress(ErrorMessage = "Deve ser um e-mail válido !")]
+        [CustomValidationEmail]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório !")]
@@ -30,7 +31,7 @@ namespace ValidacoesAPI.Models
         public string NumeroCartao { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório !")]
-        [CvvValidationAttributeCartao]
+        [CustomValidationCVVCartao]
         public string CVV { get; set; }
     }
 }
