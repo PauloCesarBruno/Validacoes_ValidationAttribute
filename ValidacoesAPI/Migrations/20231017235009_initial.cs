@@ -20,8 +20,8 @@ namespace ValidacoesAPI.Migrations
                     CPF = table.Column<string>(type: "nvarchar(14)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(30)", nullable: false),
                     Telefone = table.Column<string>(type: "nvarchar(25)", nullable: false),
-                    Cartao = table.Column<string>(type: "nvarchar(20)", nullable: false),
-                    NumeroCartao = table.Column<string>(type: "nvarchar(20)", nullable: false),
+                    Cartao = table.Column<string>(type: "nvarchar(30)", nullable: false),
+                    NumeroCartao = table.Column<string>(type: "nvarchar(30)", nullable: false),
                     CVV = table.Column<string>(type: "nvarchar(3)", nullable: false)
                 },
                 constraints: table =>

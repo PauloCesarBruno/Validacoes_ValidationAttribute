@@ -25,6 +25,7 @@ namespace ValidacoesAPI.Models
         public string Telefone { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório !")]
+        [StringLength(30, ErrorMessage = "O Nome deve ter entre 05 e 30 caracteres !", MinimumLength = 5)]
         public string Cartao { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório !")]
