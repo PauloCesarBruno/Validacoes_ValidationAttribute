@@ -9,7 +9,7 @@ namespace ValidacoesAPI.Validations
             if (value != null)
             {
                 string cvv = value.ToString();
-                if (cvv.Length >= 3 && cvv.Length <= 3 && cvv.All(Char.IsDigit))
+                if (cvv.Length  == 3 && cvv.All(Char.IsDigit))
                 {
                     return ValidationResult.Success;
                 }
