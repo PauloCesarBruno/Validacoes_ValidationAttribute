@@ -18,17 +18,18 @@ namespace ValidacoesAPI.Models
 
         [Required(ErrorMessage = "Campo Obrigatório !")]
         //[EmailAddress(ErrorMessage = "Deve ser um e-mail válido !")]
-        [CustomValidationEmail]
+        [CustomValidationEmail(ErrorMessage = "O E-Mail está em um formato incorreto.")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório !")]
         public string Telefone { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório !")]
-        [StringLength(30, ErrorMessage = "O Nome deve ter entre 05 e 30 caracteres !", MinimumLength = 5)]
+        [StringLength(30, ErrorMessage = "O Nome deve ter entre 05 e 30 caracteres.", MinimumLength = 5)]
         public string Cartao { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório !")]
+        [CustomValidationNumeroCartao]
         public string NumeroCartao { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório !")]
