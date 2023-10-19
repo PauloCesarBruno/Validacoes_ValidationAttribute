@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 namespace ValidacoesAPI.Validations
 {
     public class CustomValidationNumeroCartao : ValidationAttribute
-    {             
+    {
         private CardType _cardTypes;
         public CardType AcceptedCardTypes
         {
@@ -91,4 +91,4 @@ namespace ValidacoesAPI.Validations
             return ((checksum % 10) == 0);
         }
     }
-    }
+}
