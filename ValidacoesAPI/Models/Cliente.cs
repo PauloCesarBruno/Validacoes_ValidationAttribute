@@ -33,6 +33,10 @@ namespace ValidacoesAPI.Models
         public string NumeroCartao { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório !")]
+        [MesAno(ErrorMessage = "Data de vencimento não é válida, preencha conf. EX - > (01/30)")]
+        public string DataVencimento { get; set; }
+
+        [Required(ErrorMessage = "Campo Obrigatório !")]
         [CustomValidationCVVCartao]
         public string CVV { get; set; }
     }
