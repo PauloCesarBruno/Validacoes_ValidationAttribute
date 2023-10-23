@@ -22,6 +22,7 @@ namespace ValidacoesAPI.Migrations
                     Telefone = table.Column<string>(type: "nvarchar(25)", nullable: false),
                     Cartao = table.Column<string>(type: "nvarchar(30)", nullable: false),
                     NumeroCartao = table.Column<string>(type: "nvarchar(30)", nullable: false),
+                    DataVencimento = table.Column<string>(type: "nvarchar(5)", nullable: false),
                     CVV = table.Column<string>(type: "nvarchar(3)", nullable: false)
                 },
                 constraints: table =>
