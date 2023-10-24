@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using ValidacoesAPI.Data.DataContext;
 using ValidacoesAPI.Models;
-//
 
 namespace ValidacoesAPI.Controllers
 {
