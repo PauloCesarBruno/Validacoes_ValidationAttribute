@@ -88,7 +88,6 @@ namespace ValidacoesAPI.Controllers
             {
                 return NotFound("Cliente de código " + id + " não foi localizado!");
             }
-
             _context.Clientes.Remove(cli);
             _context.SaveChanges();
             return Ok(cli);
