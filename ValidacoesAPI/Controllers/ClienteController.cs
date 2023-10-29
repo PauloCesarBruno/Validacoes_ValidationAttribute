@@ -61,7 +61,6 @@ namespace ValidacoesAPI.Controllers
                 // Log the error or return it in the response
                 return BadRequest("Tentativa de registro Inválida !");
             }
-
             return Ok(cliente);
         }
 
